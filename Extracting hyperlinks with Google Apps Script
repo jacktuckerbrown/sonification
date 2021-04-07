@@ -1,0 +1,50 @@
+function soniextract() {
+var ss=SpreadsheetApp.getActiveSpreadsheet();
+var s=ss.getActiveSheet();
+var c=s.getActiveCell();
+var fldr=DriveApp.getFolderById("1JcuslAA9i-7JTpSR2wwc990p0VQrhQ9-");
+var files=fldr.getFiles();
+var names=[],f,str;
+while (files.hasNext()) {
+f=files.next();
+str2="How many transits?"
+str3='=hyperlink("' + f.getUrl() + '","' + f.getUrl() + '")';
+str = f.getName();
+names.push([str,str2,str3]);
+ }
+s.getRange(c.getRow(),c.getColumn(),names.length,3).setValues(names);
+}
+
+function picextract() {
+var ss=SpreadsheetApp.getActiveSpreadsheet();
+var s=ss.getActiveSheet();
+var c=s.getActiveCell();
+var fldr=DriveApp.getFolderById("1CDptX8J77s-grHFYqNWDOduj8n13vFU2");
+var files=fldr.getFiles();
+var names=[],f,str;
+while (files.hasNext()) {
+f=files.next();
+str2="How many transits?"
+str3='=hyperlink("' + f.getUrl() + '","' + f.getUrl() + '")';
+str = f.getName();
+names.push([str,str2,str3]);
+ }
+s.getRange(c.getRow(),c.getColumn(),names.length,3).setValues(names);
+}
+
+function combextract() {
+var ss=SpreadsheetApp.getActiveSpreadsheet();
+var s=ss.getActiveSheet();
+var c=s.getActiveCell();
+var fldr=DriveApp.getFolderById("1Km2pZreCcheeyu6hIO48tfHi_nOQTA-b");
+var files=fldr.getFiles();
+var names=[],f,str;
+while (files.hasNext()) {
+f=files.next();
+str2="How many transits?"
+str3='=hyperlink("' + f.getUrl() + '","' + f.getUrl() + '")';
+str = f.getName();
+names.push([str,str2,str3]);
+ }
+s.getRange(c.getRow(),c.getColumn(),names.length,3).setValues(names);
+}
