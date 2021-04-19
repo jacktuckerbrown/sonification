@@ -5,3 +5,5 @@ Code and scripts for 2021 Project
 All sections are notated with their relevant function, please note in order to run the code you will require an install of ffmpeg.
 
 'Results extractor' contains code for importing data from Google Sheets (where responses from Google Forms are saved) and calculating our results from this. 
+
+Reach me at b9058149@ncl.ac.uk
