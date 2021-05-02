@@ -1,5 +1,5 @@
 # sonification
-Code and scripts for 2021 Project
+Code and scripts for 2021 undergraduate project
 
 'Light curve generator final' is the ipython notebook I used for creating a database of light curves and outputting in the desired formats. 
 All sections are notated with their relevant function, please note in order to run the code you will require an install of ffmpeg.
